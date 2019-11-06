@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulaire des familles</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <form method="get">
+      <fieldset class="premier">
+        <legend class="premier">Votre identité</legend>
+        <ol>
+          <li>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="usernam" placeholder="Nom" />
+          </li>
+          <li>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="usersurnam" placeholder="Prénom" />
+          </li>
+          <li>
+            <label for="mail">Adresse mail :</label>
+            <input type="text" id="mail" name="usermail" placeholder="Adresse mail" />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset class="deux">
+        <legend class="deux">Adresse de livraison</legend>
+          <ol>
+            <li>
+              <label for="adresse">Adresse :</label>
+              <textarea name="useradress" id="adresse" cols="20" rows="4"></textarea>
+            </li>
+            <li>
+              <label for="codepostal">Code postal :</label>
+              <input type="text" id="codepostal" name="usercodepostal" placeholder="Code postal" />
+            </li>
+            <li>
+              <label for="ville">Ville :</label>
+              <input type="text" id="ville" name="usercity" placeholder="Ville" />
+            </li>
+          </ol>
+      </fieldset>
+      <fieldset class="trois">
+        <legend class="trois">Informations de réglement</legend>
+          <ol>
+            <li>
+              <label for="cb">Type de carte bancaire :</label></br>
+              <input class="decale" type="radio" id="cb" name="usercb"/>VISA </br>
+              <input class="decale" type="radio" id="cb"name="usercb"/>Mastercasrd
+            </li>
+            <li>
+              <label for="numcb">Numéro de carte :</label>
+              <input type="text" id="numcb" name="usernumcb" placeholder="Numéro de la carte" />
+            </li>
+            <li>
+              <label for="codecb">Code de sécurité :</label>
+              <input type="text" id="codecb" name="usercodecb" placeholder="Code de sécurité" />
+            </li>
+            <li>
+              <label for="nomtitu">Nom du titulaire :</label>
+              <input type="text" id="nomtitu" name="usernomtitu" placeholder="Nom du titulaire" />
+            </li>
+          </ol>
+      </fieldset>
+      <input type="button" value="J'achète !">
+    </form>
+  </body>
+</html>
